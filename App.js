@@ -1,7 +1,7 @@
 const express=require('express');
 const server = express();
 server.use(express.json());
-app.use(bodyParser.urlencoded());
+server.use(bodyParser.urlencoded());
 
 function validation(firstname,lastname,age){
     if(firstname.length>50 || lastname.length>50){
